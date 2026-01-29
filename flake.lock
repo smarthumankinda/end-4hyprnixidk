@@ -1,21 +1,5 @@
 {
   "nodes": {
-    "ambxst": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1769047659,
-        "narHash": "sha256-khB7WvvQB+FFiP7mljFRqNAba92iVEJP76PRGotc0kw=",
-        "owner": "axenide",
-        "repo": "ambxst",
-        "rev": "849b55c46335905de4c2516f45e2fa3344bfcbce",
-        "type": "github"
-      },
-      "original": {
-        "owner": "axenide",
-        "repo": "ambxst",
-        "type": "github"
-      }
-    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": "nixpkgs-lib"
@@ -32,6 +16,24 @@
         "owner": "hercules-ci",
         "repo": "flake-parts",
         "type": "github"
+      }
+    },
+    "illogical-impulse": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1769563089,
+        "narHash": "sha256-u0+ycP8BdKB7NiO+m+wuotBxqXoeBtGH+wOkq3jebxY=",
+        "ref": "refs/heads/main",
+        "rev": "4ff3435446e341c7703659ce88dfad26999ce191",
+        "revCount": 5870,
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/end-4/dots-hyprland"
+      },
+      "original": {
+        "submodules": true,
+        "type": "git",
+        "url": "https://github.com/end-4/dots-hyprland"
       }
     },
     "import-tree": {
@@ -118,8 +120,8 @@
     },
     "root": {
       "inputs": {
-        "ambxst": "ambxst",
         "flake-parts": "flake-parts",
+        "illogical-impulse": "illogical-impulse",
         "import-tree": "import-tree",
         "nixpkgs": "nixpkgs",
         "quickshell": "quickshell",

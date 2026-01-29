@@ -8,8 +8,8 @@
       url = "github:quickshell-mirror/quickshell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    ambxst = {
-      url = "github:axenide/ambxst";
+    illogical-impulse = {
+      url = "git+https://github.com/end-4/dots-hyprland?submodules=1";
       flake = false;
     };
   };

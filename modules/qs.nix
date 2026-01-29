@@ -45,8 +45,12 @@
       inherit pkgs;
       package = inputs'.quickshell.packages.default;
 
-      runtimeInputs = [
-        # empty for now :D...
+      runtimeInputs = with pkgs; [
+        ddcutil
+        brightnessctl
+        imagemagick
+        cava
+        qalculate-qt
       ];
 
       env = {

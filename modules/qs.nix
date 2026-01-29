@@ -1,7 +1,7 @@
-{
+{inputs, ...}: {
   perSystem = {
     pkgs,
-    inputs,
+    inputs',
     lib,
     ...
   }: let
@@ -15,7 +15,7 @@
   in {
     packages.shell = inputs.wrappers.lib.wrapPackage {
       inherit pkgs;
-      package = inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default;
+      package = inputs'.quickshell.packages.default;
 
       runtimeInputs = [
         # empty for now :D...
